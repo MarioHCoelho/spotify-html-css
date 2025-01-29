@@ -1,0 +1,9 @@
+:root{
+    --defaultDarkColor: #000;
+    --defaultLightColor: #fff;
+    --primaryBgColor: #121212;
+    --primaryFontColor: #b3b3b3;
+    --globalBorderRadius: 8px;
+    --defaultFont: "DM Sans", sans-serif;
+    --iconBgColor: rgba(0,0,07)
+}
