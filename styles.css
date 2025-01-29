@@ -1,0 +1,176 @@
+:root{
+    --defaultDarkColor: #000;
+    --defaultLightColor: #fff;
+    --primaryBgColor: #121212;
+    --primaryFontColor: #b3b3b3;
+    --globalBorderRadius: 8px;
+}
+body{
+    background-color: var(--defaultDarkColor);
+}
+
+h1 {
+    color:var(--defaultDarkColor)
+}
+
+.sidebar {
+    position:fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 12px;
+    width: 300px;
+}
+.sidebar_navigation{
+    background-color: var(--primaryBgColor);
+    border-radius: 8px;
+    padding: 16px 0px 0px 16px;
+}
+.sidebar_navigation .logo{
+    background: var(--primaryBgColor);
+    display: flex;    
+    border-radius: var(--globalBorderRadius);
+    padding: 16px 0px 0px 16px;
+}
+.logo img{
+    width: 80px;
+}
+
+.sidebar nav ul {
+    margin-top: 20px;
+    padding: 0px 20px 10px 20px;
+}
+.sidebar ul li{
+    padding: 10px 0px;
+}
+.sidebar nav ul li a {
+    color: var(--primaryFontColor);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.library{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:var(--primaryBgColor);
+    border-radius: var(--globalBorderRadius);
+    padding: 4px 8px;
+    color : var(--primaryFontColor);
+    font-weight: 600px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.library .library-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.library .library-button{
+    display: flex;
+    margin-right: 10px;
+    color: var(--primaryFontColor);
+    background-color: transparent;
+    border: 0px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family:"DM Sans", sans-serif ;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    padding: 20px 10px;
+}
+
+.library .library-button .fa{
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 300;
+    padding-right: 8px;
+}
+
+.library .library-content .fa-plus{
+    margin: 20px 10px;
+}
+
+.playlist-section {
+    display: flex;
+    align-items:flex-start ;
+    justify-content: space-between;
+    gap:20px;
+    font-size: 14px;
+    margin: 8px 0px;
+    padding: 16px 20px;
+    border-radius: var(--globalBorderRadius);
+    background-color: #242424;
+    color: var(--primaryFontColor);
+}
+
+.playlist-section .playlist-section_content{
+    display: flex;
+    flex-direction: column;
+}
+
+.playlist-section_content .text{
+    padding-bottom: 14px;
+    font-family:"DM Sans", sans-serif ;
+    color: var(--defaultLightColor);
+
+}
+
+.playlist-section_content .title{
+    font-weight: 700;
+    
+}
+.playlist-section_content .subtitle{
+    font-weight: 500;
+    font-size: 12px;
+    
+}
+.playlist-section .playlist-section_button {
+    display: flex;
+    justify-content: center;
+    
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700px;
+    font-family:"DM Sans", sans-serif ;
+    text-decoration: none;
+    text-transform: none;
+    margin-top: 12px;
+    padding: 10px;
+    border: 0px;
+    width: 113px;
+    background-color: var(--defaultLightColor);
+    color: var(--defaultDarkColor);
+    
+}
+
+.sidebar .cookies{
+    margin: 25px 20px
+}
+
+.sidebar .cookies a {
+    font-weight: 500;
+    font-size:10px;
+    text-decoration: none;
+    color: var(--primaryFontColor);
+}
+.sidebar .cookies a:hover{
+    text-decoration:underline ;
+}
+
+.language-selector .language-selector_button{
+    background-color: transparent;
+    border: 1px solid #878787;
+    cursor: pointer;
+    align-items: center;
+    font-weight: bold;
+    width: 200px;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 20px;
+    color: var(--defaultLightColor);
+}
