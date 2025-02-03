@@ -65,11 +65,11 @@ const Main = ({searchTerm}) => {
                                         </a>
                                     ))
                                 ) : (
-                                    <div class="no-results">
-                                        <div class="no-results_content-title">
-                                            <h1 class="no-results_title">Oops!</h1>
+                                    <div className="no-results">
+                                        <div className="no-results_content-title">
+                                            <h1 className="no-results_title">Oops!</h1>
                                         </div>
-                                        <p class="no-results_subtitle">Não achamos nenhuma playlist com esse nome.</p>
+                                        <p className="no-results_subtitle">Não achamos nenhuma playlist com esse nome.</p>
                                     </div>
                                 )}
                             </section>

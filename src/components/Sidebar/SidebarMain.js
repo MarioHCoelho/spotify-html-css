@@ -46,7 +46,7 @@ const Sidebar = () => {
                     </button>
                 </div>
             </section>
-            <div class="cookies">
+            <div className="cookies">
                 <a href="teste">
                     Cookies
                 </a>
