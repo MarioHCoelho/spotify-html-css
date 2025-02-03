@@ -1,4 +1,5 @@
 
+import { useState } from 'react';
 import './App.css';
 import Footer from './components/Footer/FooterMain';
 import Header from './components/Header/HeaderMain';
@@ -8,11 +9,12 @@ import Sidebar from './components/Sidebar/SidebarMain';
 
 
 function App() {
+  const [searchTerm, setSearchTerm] = useState ('');
   return (
     <div>
-      <Header/>
+      <Header onSearch = {setSearchTerm}/>
       <Sidebar/>
-      <Main/>
+      <Main searchTerm = {searchTerm}/>
       <Footer/>
       
     </div>

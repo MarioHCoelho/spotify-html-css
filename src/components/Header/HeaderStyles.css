@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    margin: 10px;
+    margin: 12px;
     border-radius: 8px;
     background-color: var(--primaryBgColor);
     padding: 12px;
@@ -15,7 +15,7 @@
     align-items: center;
 }
 
-.navigation-header .navigation .fa-arrow-left{
+.navigation-header .navigation {
     margin-right: 1.25rem;
 }
 .fa-arrow-left, .fa-arrow-right{
@@ -25,11 +25,13 @@
     width: 32px;
     height: 32px;
     color: var(--defaultLightColor);
-    background:var(--primaryBgColor) ;
-    background-color: var(--iconBgColor);
     border: none;
     border-radius: 50%;
     cursor: pointer;
+}
+.arrow-left, .arrow-right {
+    background: transparent;
+    border: none;
 }
 
 .login-header{
@@ -40,7 +42,7 @@
 .search-header{
     display: flex;
     align-items: center;
-    width: 364px;
+    width: 555px;
     height: 48px;
     margin-left: 8px;
     background-color: #242424;
@@ -62,6 +64,13 @@
     overflow: hidden;
     white-space: nowrap;
     outline: none;
+    text-decoration: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+::placeholder{
+    font-weight: 600;
 }
 
 .login-header .subscribe {
@@ -82,3 +91,4 @@
     border-radius: 40px ;
     border: none;
 }
+

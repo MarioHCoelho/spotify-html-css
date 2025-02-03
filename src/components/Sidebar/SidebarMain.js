@@ -3,6 +3,7 @@ import './SidebarStyles.css';
 import spotifyLogo from '../../assets/icons/logo-spotify.png'
 
 const Sidebar = () => {
+    
     return (
         <div className="sidebar">
         
